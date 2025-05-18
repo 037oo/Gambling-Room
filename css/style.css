@@ -1,0 +1,150 @@
+/* Reset & osnovne nastavitve */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../slike/casinoback.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #222;
+}
+
+.body, .main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Naslov */
+h1 {
+    font-size: 80px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px #000;
+    margin-bottom: 30px;
+}
+
+/* Center box */
+#center {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Obrazec */
+form {
+    width: 100%;
+}
+
+/* Label in inputi */
+label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input.vpis, select.izb {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin: 8px;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+input.vpis:focus, select.izb:focus {
+    border-color: #57a773;
+    outline: none;
+}
+
+/* Tabela za igralce in nastavitve */
+table {
+    width: 100%;
+    margin: 10px 0;
+}
+
+td.izberi {
+    width: 50%;
+    padding: 10px;
+}
+
+/* Gumbi */
+.button-5 {
+    background-color: #57a773;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button-5:hover {
+    background-color: #46875d;
+    transform: translateY(-2px);
+}
+
+.button-5:active {
+    transform: translateY(0);
+}
+
+/* Igralci */
+.igralci {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 15px;
+    margin: 10px;
+    background-color: #f7f7f7;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-size: 20px;
+    color: #444;
+}
+
+/* Dice slike */
+.kocke {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+}
+
+/* Zmagovalec */
+#zmagovalec {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+/* Spodnje obvestilo */
+.dol {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #666;
+}
+
+
